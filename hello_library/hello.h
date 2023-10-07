@@ -1,6 +1,6 @@
 void hello_world();
 
-typedef int (*OnSensorUpdate)(const unsigned char* const values);
+typedef int (*OnSensorUpdate)(const unsigned char* const values, int size);
 
 int registerCallback(OnSensorUpdate onSensorUpdate);
 
